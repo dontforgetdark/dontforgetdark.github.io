@@ -1,6 +1,7 @@
 ---
 layout: post
-category: Range-Queries
+title: Range queries
+tags: [rmq, prefix, range queries]
 ---
 **Table of content**
 
