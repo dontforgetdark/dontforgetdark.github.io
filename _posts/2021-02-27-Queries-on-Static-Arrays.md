@@ -21,7 +21,7 @@ sum(a, b) = sum(0, b) - sum(0, a-1)
 ```
 
 *Mở rộng: Cho mảng 2 chiều*
-![sum2d](assets/img/sum2d.png)
+![sum2d](/assets/img/sum2d.png)
 ```
 S(A) - S(B) - S(C) + S(D)
 ```
