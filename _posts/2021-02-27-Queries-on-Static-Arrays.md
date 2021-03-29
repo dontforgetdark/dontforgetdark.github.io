@@ -3,7 +3,11 @@ layout: post
 title:  Queries on Static Arrays
 tags: [rmq, prefix, range queries]
 ---
+**Table of content**
 
+- [Sum queries](#sum-queries)
+- [Min queries](#min-queries)
+- 
 ## Sum queries
 **Bài toán**: Cho mảng a có n phần tử. Q truy vấn, mối truy vấn tính tổng các phần tử đoạn [a, b].
 
