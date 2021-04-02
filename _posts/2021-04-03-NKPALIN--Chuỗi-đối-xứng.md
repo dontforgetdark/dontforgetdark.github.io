@@ -2,7 +2,7 @@
 layout: post
 title: NKPALIN - Chuỗi đối xứng
 subtitle: vnspoj
-tags: [dp, string]
+tags: [dp, string, panlindrome]
 ---
 Một chuỗi được gọi là đối xứng (palindrome) nếu như khi đọc chuỗi này từ phải sang trái cũng thu được chuỗi ban đầu.
 
