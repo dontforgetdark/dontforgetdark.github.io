@@ -4,9 +4,7 @@ title: NKPALIN - Chuỗi đối xứng
 subtitle: vnspoj
 tags: [dp, string, panlindrome]
 ---
-Một chuỗi được gọi là đối xứng (palindrome) nếu như khi đọc chuỗi này từ phải sang trái cũng thu được chuỗi ban đầu.
-
-Yêu cầu: tìm một chuỗi con đối xứng dài nhất của một chuỗi s cho trước. Chuỗi con là chuỗi thu được khi xóa đi một số ký tự từ chuỗi ban đầu.
+Tìm một chuỗi con đối xứng dài nhất của một chuỗi s cho trước. Chuỗi con là chuỗi thu được khi xóa đi một số ký tự từ chuỗi ban đầu.
 
 ## Lời giải
 - Gọi f[x][y] là độ dài panlindrome dài nhất có thể từ chuỗi s[x, y]
