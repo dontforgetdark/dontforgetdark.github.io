@@ -4,7 +4,7 @@ title: NKSGAME - VOI08 Trò chơi với dãy số
 subtitle: vnspoj
 tags: [binary_search, lower_bound]
 ---
-Cho 2 mảng có n phần tử. Mỗi phần tử chọn ra 1 phần tử sao cho abs(tổng 2 phần tử được chọn) là nhỏ nhất.
+Cho 2 mảng đều có n phần tử. Mỗi phần tử chọn ra 1 phần tử sao cho abs(tổng 2 phần tử được chọn) là nhỏ nhất. Xuất ra giá trị nhỏ nhất đó.
 
 ## Lời giải
 - Sắp xếp các mảng a tăng dần để chặt nhị phân.
