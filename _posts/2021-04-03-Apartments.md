@@ -4,7 +4,7 @@ title: Apartments
 subtitle: CSES
 tags: [sort, greedy]
 ---
-Có n người và m căn hộ. Mỗi người i muốn mua một căn hộ giá a[i]. Mỗi căn hộ i có giá b[i]. Người mua sẽ chấp nhận mua một căn nhà khi chênh lệch `|b[i]-a[i]|<=k`.
+Có n người và m căn hộ. Mỗi người i muốn mua một căn hộ giá a[i]. Mỗi căn hộ i có giá b[i]. Người mua sẽ chấp nhận mua một căn nhà khi chênh lệch |b[i]-a[i]|<=k.
 
 Tính số người tối đa có thể sở hữu cho mình một căn hộ.
 
