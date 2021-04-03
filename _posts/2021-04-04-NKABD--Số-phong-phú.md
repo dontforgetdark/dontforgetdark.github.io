@@ -2,7 +2,7 @@
 layout: post
 title: NKABD - Số phong phú
 subtitle: vnspoj
-tags: [theorynumber, divisor]
+tags: [theory number, divisor]
 ---
 Trong số học, số phong phú là các số mà tổng các ước số của số đó (không kể chính nó) lớn hơn số đó. Ví dụ, số 12 có tổng các ước số (không kể 12) là 1 + 2 + 3 + 4 + 6 = 16 > 12. Do đó 12 là một số phong phú.
 
