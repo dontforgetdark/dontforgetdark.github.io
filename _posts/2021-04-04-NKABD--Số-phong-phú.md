@@ -1,7 +1,6 @@
 ---
 layout: post
-title: 
-NKABD - Số phong phú
+title: NKABD - Số phong phú
 subtitle: vnspoj
 tags: [theorynumber, divisor]
 ---
