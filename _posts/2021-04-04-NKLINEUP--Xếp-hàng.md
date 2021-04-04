@@ -9,8 +9,9 @@ Hàng ngày khi lấy sữa, N con bò của bác John (1 ≤ N ≤ 50000) luôn
 Bác John đã chuẩn bị một danh sách gồm Q (1 ≤ Q ≤ 200000) đoạn các con bò và chiều cao của chúng (trong phạm vi [1, 1000000]). Với mỗi đoạn, bác John muốn xác định chênh lệch chiều cao giữa con bò thấp nhất và cao nhất. Bạn hãy giúp bác John thực hiện công việc này!
 
 ## Lời giải
-Ta có thể dùng ctdl segment tree hoặc là thuật toán bảng thưa thới(sparce table algorithm)
-
+Ta có thể dùng ctdl segment tree hoặc là thuật toán bảng thưa thớt(sparce table algorithm)
+- Do các truy vấn trong bài là truy vấn tĩnh nên ta dùng bảng thưa thớt là được rồi, đpt sẽ là **O(nlogn+m)**
+- Đpt khi dùng segment tree sẽ là **O((n+m)logn)**
 ## Code 1
 
 ```cpp
