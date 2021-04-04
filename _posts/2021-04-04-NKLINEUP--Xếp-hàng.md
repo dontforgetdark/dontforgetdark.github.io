@@ -12,6 +12,7 @@ Bác John đã chuẩn bị một danh sách gồm Q (1 ≤ Q ≤ 200000) đoạ
 Ta có thể dùng ctdl segment tree hoặc là thuật toán bảng thưa thớt(sparce table algorithm)
 - Do các truy vấn trong bài là truy vấn tĩnh nên ta dùng bảng thưa thớt là được rồi, đpt sẽ là **O(nlogn+m)**
 - Đpt khi dùng segment tree sẽ là **O((n+m)logn)**
+
 ## Code 1
 
 ```cpp
