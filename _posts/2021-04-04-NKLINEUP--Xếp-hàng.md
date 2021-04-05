@@ -18,61 +18,46 @@ Ta có thể dùng ctdl segment tree hoặc là thuật toán bảng thưa thớ
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
-struct segmin{
-	int n;
+int minn(int a, int b){
+	return (a<b? a: b);
+}
+int maxx(int a, int b){
+	return (a>b? a: b);
+}
+struct segment_tree{
+	int n, init;
 	vector<int> v;
-	segmin(int x){
-		n=x;
-		v.assign(2*n, 1e9);
-	}
-	void update(int p, int val){
-		p+=n;
-		v[p]=val;
-		for(p/=2; p>0; p/=2){
-			v[p]=min(v[p*2], v[p*2+1]);
-		}
-	}
-	int get(int l, int r){
-		int res=1e9;
-		l+=n, r+=n;
-		while(l<=r){
-			if(l%2==1) res=min(res, v[l++]);
-			if(r%2==0) res=min(res, v[r--]);
-			l/=2, r/=2;
-		}
-		return res;
-	}
-};
-struct segmax{
-	int n;
-	vector<int> v;
-	segmax(int x){
+	function<int(int,int)> change;
+	segment_tree(int x, int z, function<int(int,int)> y){
 		n=x;
 		v.assign(2*n, 0);
+		change=y;
+		init=z;
 	}
 	void update(int p, int val){
 		p+=n;
 		v[p]=val;
 		for(p/=2; p>0; p/=2){
-			v[p]=max(v[p*2], v[p*2+1]);
+			v[p]=change(v[p*2], v[p*2+1]);
 		}
 	}
 	int get(int l, int r){
-		int res=0;
+		int res=init;
 		l+=n, r+=n;
 		while(l<=r){
-			if(l%2==1) res=max(res, v[l++]);
-			if(r%2==0) res=max(res, v[r--]);
+			if(l%2==1) res=change(res, v[l++]);
+			if(r%2==0) res=change(res, v[r--]);
 			l/=2, r/=2;
 		}
 		return res;
 	}
 };
 int main(){
+	ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 	int n, q;
 	cin >> n >> q;
-	segmax aa(n);
-	segmin ii(n);
+	segment_tree aa(n, 0, maxx);
+	segment_tree ii(n,1e9, minn);
 	for(int i=0; i<n; i++){
 		int x;
 		cin >> x;
