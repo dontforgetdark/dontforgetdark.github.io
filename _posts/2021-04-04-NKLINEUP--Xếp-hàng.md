@@ -87,3 +87,38 @@ int main(){
 	}
 }
 ```
+## Code 2
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define debug(x) cerr << #x <<  " = " << x <<  endl;
+int main(){
+	int n, q;
+	cin >> n >> q;
+	int k=log2(n);
+	int a[k+1][n+1];
+	int b[k+1][n+1];
+	for(int i=1; i<=n; i++){
+		cin >> a[0][i];
+		b[0][i]=a[0][i];
+	}
+	for(int i=1; i<=k; i++){
+		for(int j=1; j+(1<<i)-1<=n; j++){
+			a[i][j]=max(a[i-1][j], a[i-1][j+(1<<(i-1))]);
+			b[i][j]=min(b[i-1][j], b[i-1][j+(1<<(i-1))]);
+		}
+	}
+	int lg[n+1];
+	lg[1]=0;
+	for(int i=2; i<=n; i++) lg[i]=lg[i/2]+1;
+	while(q--){
+		int l, r;
+		cin >> l >> r;
+		int x=r-l+1;
+		int ma=max(a[lg[x]][l], a[lg[x]][r-(1<<lg[x])+1]);
+		int mi=min(b[lg[x]][l], b[lg[x]][r-(1<<lg[x])+1]);
+		cout << ma - mi << '\n';
+	}
+}
+```
+**Lưu ý:** lỗi sai đã mắc là nhầm lẫn giữa hàm log(x) và log2(x). Theo thứ tự chúng là cơ số e và cơ số 2.
