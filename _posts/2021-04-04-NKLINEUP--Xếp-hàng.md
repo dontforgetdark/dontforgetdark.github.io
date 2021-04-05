@@ -2,7 +2,7 @@
 layout: post
 title: NKLINEUP - Xếp hàng
 subtitle: vnspoj
-tags: [range queries, rmq, max, min, sparce table]
+tags: [range queries, rmq, max, min, sparse table]
 ---
 Hàng ngày khi lấy sữa, N con bò của bác John (1 ≤ N ≤ 50000) luôn xếp hàng theo thứ tự không đổi. Một hôm bác John quyết định tổ chức một trò chơi cho một số con bò. Để đơn giản, bác John sẽ chọn ra một đoạn liên tiếp các con bò để tham dự trò chơi. Tuy nhiên để trò chơi diễn ra vui vẻ, các con bò phải không quá chênh lệch về chiều cao.
 
