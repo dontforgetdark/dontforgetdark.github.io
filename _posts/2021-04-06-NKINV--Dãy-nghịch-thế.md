@@ -6,6 +6,8 @@ tags: [fenwick, BIT, segment tree]
 ---
 Cho một dãy số a1.. aN. Một nghịch thế là một cặp số u, v sao cho u < v và au > av. Nhiệm vụ của bạn là đếm số nghịch thế.
 
+## Lời giải
+- Với mỗi phần tử ở vị trí i ta tính xem có bao nhiêu phần tử a[x]>a[i] mà x thuộc [1, i), trong bài này chỉ số đánh từ 1 để tiện áp dụng fenwick
 ## Code
 ```cpp
 #include <bits/stdc++.h>
