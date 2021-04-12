@@ -113,7 +113,7 @@ int main() {
     return 0;
 }
 ```
-## Code 4: dp cơ bản
+## Code 5: dp cơ bản
 
 ```cpp
 #include <bits/stdc++.h>
