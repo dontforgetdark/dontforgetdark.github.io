@@ -8,6 +8,10 @@ Nông dân John đang đưa các con bò của anh ta đi xem phim! Xe tải c�
 
 Cho N (1≤N≤16) con bò và khối lượng Wi của từng con, hãy cho biết khối lượng bò lớn nhất mà John có thể đưa đi xem phim là bao nhiêu.
 
+## Lời giải
+
+-Ta duyệt mảng từ đầu tới cuối, với mỗi phần tử ta có 2 lựa chọn(1 là chọ, 2 là ko chọn). Như vậy sau cùng khi tới cuối mảng ta sẽ có tất cả các tổng có thể có, đpt của thuật là O(2^n)
+
 ## Code 1
 ```cpp
 #include <bits/stdc++.h>
