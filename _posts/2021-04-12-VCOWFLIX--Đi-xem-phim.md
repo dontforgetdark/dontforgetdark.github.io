@@ -113,3 +113,27 @@ int main() {
     return 0;
 }
 ```
+## Code 4: dp cơ bản
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+	ios::sync_with_stdio(false); cin.tie(0);
+	int c, n;
+	cin >> c >> n;
+	int a[n];
+	for(auto &x: a) cin >> x;
+	vector<bool> mark(c+1, 0);
+	mark[0]=1;
+	for(auto x: a){
+		for(int i=c-x; i>=0; i--){
+			mark[i+x]=mark[i+x] or mark[i];
+		}
+	}
+	for(int i=c; i>=0; i--){
+		if(mark[i]) return cout << i, 0;
+	}
+}
+```
