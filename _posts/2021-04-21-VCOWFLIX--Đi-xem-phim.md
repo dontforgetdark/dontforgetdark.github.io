@@ -37,7 +37,7 @@ int main(){
 }
 ```
 
-## Code 2
+## Code 2: nâng cấp từ code 1
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -80,7 +80,8 @@ int main(){
 	cout << res;
 }
 ```
-## Code 4: style bitmask (nguồn vietcodes.github.io)
+## Code 4: style bitmask 
+*(nguồn vietcodes.github.io)*
 - Sinh 2^n TH, với mỗi TH sẽ có 1 dãy bit...xét bit cuối xem là 1 ko... rồi dịch bit... rồi lại xét bit cuối...
 ```cpp
 #include <iostream>
